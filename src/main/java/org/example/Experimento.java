@@ -6,14 +6,11 @@ import java.util.List;
 public class Experimento {
     private static final int MAX_COMIDA = 300;
     private int[] cantidadesComida;
-    private String nombreArchivo;
-    private String medio;
     private int idExperimento;
     private List<PoblacionBacteria> cultivos;
 
-    public Experimento(int idExperimento, String medio) {
+    public Experimento(int idExperimento) {
         this.idExperimento = idExperimento;
-        this.medio = medio;
         cantidadesComida = new int[30];
         for (int i = 0; i < cantidadesComida.length; i++) {
             cantidadesComida[i] = 3 * i + 100;
@@ -34,15 +31,6 @@ public class Experimento {
             return -1;
         }
     }
-
-    public String getMedio() {
-        return medio;
-    }
-
-    public void setMedio(String medio) {
-        this.medio = medio;
-    }
-
     public int getIdExperimento() {
         return idExperimento;
     }

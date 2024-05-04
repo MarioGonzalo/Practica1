@@ -10,9 +10,9 @@ public class PoblacionBacteria {
     int numInicialBacteria;
     int numActualBacteria;
     int temperatura;
-    Enum TipoLuminosidad;
+    String luminosidad;
 
-    public PoblacionBacteria(String nombre, Experimento exp, Date fechaInicio, Date fechaFin, int numInicialBacteria, int numActualBacteria, int temperatura, Enum TipoLuminosidad) {
+    public PoblacionBacteria(String nombre, Experimento exp, Date fechaInicio, Date fechaFin, int numInicialBacteria, int numActualBacteria, int temperatura, String luminosidad) {
         this.nombre = nombre;
         this.exp = exp;
         this.fechaInicio = fechaInicio;
@@ -20,7 +20,7 @@ public class PoblacionBacteria {
         this.numInicialBacteria = numInicialBacteria;
         this.numActualBacteria = numActualBacteria;
         this.temperatura = temperatura;
-        this.TipoLuminosidad = TipoLuminosidad;
+        this.luminosidad = luminosidad;
     }
 
     int obtenerCantidadComidaDia(int nd) {
@@ -87,12 +87,12 @@ public class PoblacionBacteria {
         this.temperatura = temperatura;
     }
 
-    public Enum getTipoLuminosidad() {
-        return TipoLuminosidad;
+    public String getLuminosidad() {
+        return luminosidad;
     }
 
-    public void setTipoLuminosidad(Enum TipoLuminosidad) {
-        this.TipoLuminosidad = TipoLuminosidad;
+    public void setTipoLuminosidad(String luminosidad) {
+        this.luminosidad = luminosidad;
     }
 
 
